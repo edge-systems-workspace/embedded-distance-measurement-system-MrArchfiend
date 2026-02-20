@@ -14,17 +14,20 @@ float distance = 0.0;
 
 void setup() {
 
-    // TODO 5:
-    // Initialize Serial communication (9600 baud rate)
+    // TODO 5: Initialize Serial communication (9600 baud rate)
+    Serial.begin(9600);
 
-    // TODO 6:
-    // Configure TRIG as OUTPUT
+    // TODO 6: Configure TRIG as OUTPUT
+    pinMode(TRIG_PIN, OUTPUT);
 
-    // TODO 7:
-    // Configure ECHO as INPUT
+    // TODO 7: Configure ECHO as INPUT
+    pinMode(ECHO_PIN, INPUT);
 
-    // TODO 8:
-    // Print system initialization message
+    // TODO 8: Print system initialization message
+    Serial.println("======================================");
+    Serial.println(" Ultrasonic Distance Measurement ");
+    Serial.println("======================================");
+    Serial.println("Monitoring distance using HC-SR04...");
 }
 
 void loop() {
