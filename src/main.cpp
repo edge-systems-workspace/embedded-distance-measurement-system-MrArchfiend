@@ -41,8 +41,8 @@ void loop() {
     delayMicroseconds(10);
     digitalWrite(TRIG_PIN, LOW);
  
-    // TODO 11:
-    // Measure pulse duration on ECHO using pulseIn()
+    // TODO 11: Measure pulse duration on ECHO using pulseIn()
+    duration = pulseIn(ECHO_PIN, HIGH);
 
     // TODO 12:
     // Calculate distance in cm
